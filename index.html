@@ -43,7 +43,7 @@
 <body class="font-arabic">
     <header class="w-full text-2xl">
         <div class="flex items-center justify-between p-4 laptop:px-16 text-white font-bold">
-            <a href="#" class="z-10 fill-white">
+            <a id="menu_berger" href="#" class="z-10 fill-white">
                 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="34px" height="34px"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/></svg>
             </a>
             <a href="./" class="z-10">كويري</a>
@@ -80,7 +80,7 @@
                                 <div class="w-12 flex items-center pl-3 rounded overflow-hidden">
                                     <img class="rounded-sm" src="img/ma.svg" alt="morocco">
                                 </div>
-                                <input required min="10" class="w-full h-full p-3 rounded" placeholder="+212" value="+212"  type="text" name="" id="">
+                                <input required min="10" class="w-full h-full p-3 rounded" placeholder="+212" value="212"  type="number" name="" id="">
                             </div>
                             <div class="flex py-2"></div>
                             <input placeholder="رقم الإحالة (اختياري)" class="border border-slate-400 w-full text-right p-3 rounded" type="text" name="" id="">
@@ -225,18 +225,49 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex py-16"></div>
-                <div class="bg-red-300 p-4">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eos non, voluptatem nulla voluptate velit nemo sit quis excepturi architecto vel? Doloribus fugit consequatur mollitia aperiam nam porro ut maxime?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eos non, voluptatem nulla voluptate velit nemo sit quis excepturi architecto vel? Doloribus fugit consequatur mollitia aperiam nam porro ut maxime?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eos non, voluptatem nulla voluptate velit nemo sit quis excepturi architecto vel? Doloribus fugit consequatur mollitia aperiam nam porro ut maxime?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eos non, voluptatem nulla voluptate velit nemo sit quis excepturi architecto vel? Doloribus fugit consequatur mollitia aperiam nam porro ut maxime?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eos non, voluptatem nulla voluptate velit nemo sit quis excepturi architecto vel? Doloribus fugit consequatur mollitia aperiam nam porro ut maxime?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eos non, voluptatem nulla voluptate velit nemo sit quis excepturi architecto vel? Doloribus fugit consequatur mollitia aperiam nam porro ut maxime?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eos non, voluptatem nulla voluptate velit nemo sit quis excepturi architecto vel? Doloribus fugit consequatur mollitia aperiam nam porro ut maxime?
-                </div>
             </div>
         </div>
     </div>
+    <div id="overlay" class="hidden fixed top-0 left-0 z-50 w-screen h-screen bg-black bg-opacity-60 backdrop-blur-[2px]"></div>
+    <div id="side_menu" class="invisible bg-white shadow fixed top-0 -left-72 z-50 w-[80vw] h-screen duration-500 ease-in-out">
+        <div class="bg-opacity-40 p-4 laptop:px-16">
+            <a id="menu_berger_2" href="#" class="z-10 fill-black">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="34px" height="34px"><path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"/></svg>
+            </a>
+        </div>
+        <div class="p-4 flex flex-col text-2xl px-8 h-full">
+            <div class="my-2">Link one</div>
+            <div class="my-2">Link Two</div>
+            <div class="my-2">Link Tree</div>
+            <div class="my-2">Link Four</div>
+        </div>
+    </div>
+    <script>
+        let side_menu = document.getElementById("side_menu")
+        let menu_berger = document.getElementById("menu_berger")
+        let menu_berger_2 = document.getElementById("menu_berger_2")
+        let overlay = document.getElementById("overlay")
+
+        function hideSide(){
+            side_menu.classList.replace("left-0", "-left-72");
+            overlay.classList.replace("block", "hidden");
+            setTimeout(() => {
+                side_menu.classList.add("invisible");
+            }, 0);
+        }
+        function showSide(){
+            side_menu.classList.replace("-left-72", "left-0");
+            overlay.classList.replace("hidden", "block");
+            setTimeout(() => {
+                side_menu.classList.remove("invisible");
+            }, 0);
+        }
+        menu_berger_2.addEventListener("click", function(){
+            hideSide();
+        })
+        menu_berger.addEventListener("click", function(){
+            showSide();
+        });
+    </script>
 </body>
 </html>
