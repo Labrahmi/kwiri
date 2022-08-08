@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/output.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
         html{
@@ -49,11 +50,11 @@
             <a href="./" class="z-10">كويري</a>
         </div>
     </header>
-    <div>
+    <div class="">
         <div class="relative -top-20 h-[28rem] overflow-hidden">
-            <img class="w-full" src="img/port_header_bg.png" alt="header">
+            <img class="w-full fixed" src="img/port_header_bg.png" alt="header">
         </div>
-        <div class="relative -top-16">
+        <div class="relative -top-16 max-h-screen">
             <main class="bg-white p-4">
                 <div class="laptop:px-20 laptop:justify-between laptop:flex laptop:flex-row-reverse grid gap-6 grid-cols-1 grid-rows-2 laptop:grid-cols-2 laptop:grid-rows-1 relative -top-80">
                     <div class="text-white text-right p-0">
@@ -117,7 +118,7 @@
                 </div>
             </main>
             <div class="flex py-12"></div>
-            <div class="relative -top-64 w-full">
+            <div class="relative -top-64 w-full bg-white">
                 <div class="w-full h-72 overflow-hidden flex items-center">
                     <img class="w-full" src="img/backdrive.png" alt="">
                 </div>
@@ -182,7 +183,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-center bg-gray-100 relative -top-20 p-4 py-8 laptop:p-12 text-center">
-                    <div class="text-black font-bold laptop:text-4xl text-xl">هل أنت جاهز لتصبح كابتن في كريم؟</div>
+                    <div class="text-black font-bold laptop:text-4xl text-xl">هل أنت جاهز لتصبح كابتن في كويري؟</div>
                     <div class="flex laptop:py-8 py-4"></div>
                     <a class="w-4/5 laptop:w-72 text-base cursor-pointer hover:brightness-105 duration-300 ease-in-out hover:bg-gradient-to-l bg-gradient-to-r from-[#aec95b] to-[#a2c047] text-white font-bold py-3 px-6 rounded shadow" href="#">
                         سجل الآن
@@ -225,9 +226,129 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <div class="py-8 pt-24">
+                        <h1 class="text-center font-black text-4xl">كيف تعمل كويري؟</h1>
+                    </div>
+                    <div class="pb-16 laptop:px-32 max-w-4xl m-auto h-80">
+                        <div class="swiper mySwiper2 px-10">
+                            <div class="swiper-wrapper">
+                                <!-- - -->
+                                <div class="swiper-slide flex flex-col items-center justify-center text-center p-4">
+                                    <img class="laptop:w-72 px-4" src="img/slide-imgs/1.png" alt="">
+                                    <div class="text-center flex flex-col items-center relative -top-16">
+                                        <div class="w-fit text-2xl p-2 text-center bg-green-600 text-white font-bold rounded-full px-4">1</div>
+                                        <div class="font-bold text-3xl text-green-600 py-2">
+                                            حمّل وسجل الدخول
+                                        </div>
+                                        <div class="text-gray-700 py-2">
+                                            بعد استكمال التدريب، يمكنك تحميل تطبيق الكباتن وتسجيل الدخول باستخدام تفاصيلك وكلمة المرور الخاصة بك.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- - -->
+                                <div class="swiper-slide flex flex-col items-center justify-center text-center p-4">
+                                    <img class="laptop:w-72 px-4" src="img/slide-imgs/2.png" alt="">
+                                    <div class="text-center flex flex-col items-center relative -top-16">
+                                        <div class="w-fit text-2xl p-2 text-center bg-green-600 text-white font-bold rounded-full px-4">2</div>
+                                        <div class="font-bold text-3xl text-green-600 py-2">
+                                            استقبل الحجوزات
+                                        </div>
+                                        <div class="text-gray-700 py-2">
+                                            اختر "متوفر" بعد الدخول إلى التطبيق لتبدأ بتلقي الحجوزات. ستظهر أمامك نقطة انطلاق المشوار عند تلقي أحد الحجوزات، يمكنك عندها الاختيار بين قبول أو رفض الحجز بحسب توفرك.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- - -->
+                                <div class="swiper-slide flex flex-col items-center justify-center text-center p-4">
+                                    <img class="laptop:w-72 px-4" src="img/slide-imgs/3.png" alt="">
+                                    <div class="text-center flex flex-col items-center relative -top-16">
+                                        <div class="w-fit text-2xl p-2 text-center bg-green-600 text-white font-bold rounded-full px-4">3</div>
+                                        <div class="font-bold text-3xl text-green-600 py-2">
+                                            اصطحاب العميل
+                                        </div>
+                                        <div class="text-gray-700 py-2">
+                                            سيرشدك التطبيق إلى نقطة الانطلاق في حال قبولك الحجز. انقر على " وصول إلى نقطة الانطلاق" عند وصولك لاصطحاب العميل.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- - -->
+                                <div class="swiper-slide flex flex-col items-center justify-center text-center p-4">
+                                    <img class="laptop:w-72 px-4" src="img/slide-imgs/1.png" alt="">
+                                    <div class="text-center flex flex-col items-center relative -top-16">
+                                        <div class="w-fit text-2xl p-2 text-center bg-green-600 text-white font-bold rounded-full px-4">4</div>
+                                        <div class="font-bold text-3xl text-green-600 py-2">
+                                            أنجز المشوار
+                                        </div>
+                                        <div class="text-gray-700 py-2">
+                                            يستخدم التطبيق خرائط جوجل لإرشادك إلى نقطة وصول العميل. من الممكن أيضاً أن يقوم العميل بإرشادك بنفسه.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- - -->
+                                <div class="swiper-slide flex flex-col items-center justify-center text-center p-4">
+                                    <img class="laptop:w-72 px-4" src="img/slide-imgs/2.png" alt="">
+                                    <div class="text-center flex flex-col items-center relative -top-16">
+                                        <div class="w-fit text-2xl p-2 text-center bg-green-600 text-white font-bold rounded-full px-4">5</div>
+                                        <div class="font-bold text-3xl text-green-600 py-2">
+                                            حقق أرباحك
+                                        </div>
+                                        <div class="text-gray-700 py-2">
+                                            ينتهي المشوار بعد توصيل العميل إلى النقطة التي اختارها، وستجد أرباحك بعد ذلك مباشرة في بوابة الكابتن. يمكنك تحصيل ربحك فوراً من المشاوير التي يدفع فيها العميل نقداً، وتتكفل كويري في دفع المشاوير التي تُدفع عن طريق البطاقة أو الرصيد.
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- - -->
+                            </div>
+                            <div class="z-10 flex justify-center laptop:justify-between laptop:relative laptop:-top-60 items-center laptop:hidden relative -top-16">
+                                <div class="bg-green-50 hover:bg-green-200 duration-200 ease-in-out p-6 rounded-full youssefio1 shadow-sm">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: black;"><path d="M13.939 4.939 6.879 12l7.06 7.061 2.122-2.122L11.121 12l4.94-4.939z"></path></svg>
+                                </div>
+                                <span class="flex p-4"></span>
+                                <div class="bg-green-50 hover:bg-green-200 duration-200 ease-in-out p-6 rounded-full youssefio2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: black;"><path d="M10.061 19.061 17.121 12l-7.06-7.061-2.122 2.122L12.879 12l-4.94 4.939z"></path></svg>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="laptop:pt-[6rem] pt-[18rem]">
+                    <div class="py-8 pt-24">
+                        <h1 class="text-center font-black text-4xl">
+                            الأسئلة المتداولة
+                        </h1>
+                    </div>
+                    <div class=" p-4 grid laptop:gap-16 gap-4 grid-cols-1 grid-rows-3 laptop:grid-cols-3 laptop:grid-rows-1 text-right laptop:px-16">
+                        <div class=" p-4">
+                            <div class="text-xl font-bold py-2">
+                                متى يمكنني المباشرة بالقيادة؟
+                            </div>
+                            مجرد أن يتم تفعيل حسابك، يمكنك تسجيل الدخول لتطبيق الكباتن (أدما) ومباشرة العمل!
+                        </div>
+                        <div class=" p-4">
+                            <div class="text-xl font-bold py-2">
+                                كيف تتم عملية فحص السيارة؟
+                            </div>
+                            تختلف عملية فحص السيارة بحسب المدينة التي تعمل فيها، ففي بعض المدن يقوم فريق من كريم بالفحص، في حين يتم ذلك عن طريق طرف ثالث في مدن أُخرى، مثل شركة ناسيتا Nacita في مصر، وشركة كارشور CarSure في باكستان.
+                        </div>
+                        <div class=" p-4">
+                            <div class="text-xl font-bold py-2">
+                                ما هي المستندات التي أحتاجها لتقديم الطلب؟
+                            </div>
+                            من ضمن المستنات المطلوبة رخصة القيادة وبطاقة الهوية وأوراق تسجيل السيارة والتأمين، وصورة حديثة لك. قد تحتاج إلى مستندات إضافية.
+                        </div>
+                    </div>
+                    <div class="flex py-12"></div>
+                    <div class="bg-amber-400 text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, fuga aspernatur consequuntur placeat, et amet eaque vero distinctio minima nam molestiae? Officia quae sapiente illum suscipit perspiciatis odit laboriosam cupiditate.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    
     <div id="overlay" class="hidden fixed top-0 left-0 z-50 w-screen h-screen bg-black bg-opacity-60 backdrop-blur-[2px]"></div>
     <div id="side_menu" class="invisible bg-white shadow fixed top-0 -left-72 z-50 w-[80vw] h-screen duration-500 ease-in-out">
         <div class="bg-opacity-40 p-4 laptop:px-16">
@@ -242,6 +363,28 @@
             <div class="my-2">Link Four</div>
         </div>
     </div>
+
+
+    <!-- -- -->
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper2", {
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,	
+        },
+        navigation: {
+            nextEl: ".youssefio2",
+            prevEl: ".youssefio1",
+        },
+        });
+    </script>
+
+    <!-- ===== -->
     <script>
         let side_menu = document.getElementById("side_menu")
         let menu_berger = document.getElementById("menu_berger")
